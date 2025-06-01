@@ -21,7 +21,7 @@ function Nosotros() {
         combinan estilo con funcionalidad.
       </p>
 
-      <p className="nosotros-paragraph">
+      <p className="nosotros-texto">
         Cada producto cuenta una historia. Y detrás de cada venta, hay un proyecto con raíz artesanal, espíritu
         emprendedor y un profundo amor por nuestras costumbres.
       </p>
