@@ -1,9 +1,11 @@
 import "./NavBar.css"
+import { Link, Outlet } from "react-router-dom"
 import logo from "../../assets/matenauta.png"
 import CartWidget from "../CartWidget/CartWidget"
 
 function NavBar() {
   return (
+    <div>
     <nav className="barra-nav">
       <div className="logo">
         <a href="">
@@ -13,21 +15,23 @@ function NavBar() {
       <div className="lista">
         <ul>
         <li>
-          <a href="#">INICIO</a>
+          <Link to={"/"}>INICIO</Link>
         </li>
         <li>
-          <a href="#">TIENDA</a>
+          <Link to={"/Productos"}>TIENDA</Link>
         </li> 
         <li>
-          <a href="#">RRHH</a>
+          <Link to={"/Nosotros"}>NOSOTROS</Link>
         </li>
-        <li>
-          <a href="#">CONTACTO</a>
-        </li>
+      
       </ul>
       </div>
+      
       <CartWidget/>
     </nav>
+    <Outlet/>
+    </div>
+    
   )
 }
 

@@ -1,0 +1,35 @@
+.fondo{
+    background-color: #2A2A2A;
+    height: 900px;
+}
+
+.fondo h1{
+    
+    text-align: center;
+    color: #F3E9D2;;
+}
+.fondo video{
+    margin: 10px 15%;
+    width: 75%;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.botones button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    color: #F3E9D2;
+    background: #1A1A1A;
+    font-weight: bolder;
+    cursor: pointer;
+}
