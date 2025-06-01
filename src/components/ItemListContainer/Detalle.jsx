@@ -1,5 +1,5 @@
 import productosMates from "../Data/productos";
-
+import "./detalle.css"
 import { useParams } from "react-router-dom";
 
 
@@ -17,11 +17,12 @@ function Detalle() {
     }
 
   return (
-    <div>
+    <div className="detalle-container">
         <h2>Detalles del producto</h2>
         <h2>{producto.nombre}</h2>
+        <img src={producto.imagen} alt="" />
         <p>{producto.descripcion}</p>
-        <h3>{producto.precio}</h3>
+        <h3>${producto.precio}</h3>
     </div>
   )
 }

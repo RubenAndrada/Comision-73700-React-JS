@@ -31,15 +31,6 @@ function Productos({ productos }) {
 
   return (
     <>
-      {/* <div>
-        <button onClick={() => handleFilter("mates")}>Mates</button>
-        <button onClick={() => handleFilter("bombillas")}>Bombillas</button>
-        <button onClick={() => handleFilter("termos")}>Termos</button>
-        <button onClick={() => handleFilter("accesorios")}>Accesorios</button>
-        <button onClick={() => handleFilter("kits")}>Kits</button>
-        <button onClick={() => handleFilter("")}>Todos</button>
-      </div> */}
-
       <div className="fondo1">
         <div className="botones">
         <button onClick={() => handleFilter("mates")}>Mates</button>

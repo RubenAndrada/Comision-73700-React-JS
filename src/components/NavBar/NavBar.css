@@ -1,58 +1,84 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
-    
-   
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 .barra-nav {
-    position: sticky;
-    background-color: #1A1A1A;
-    margin-top: 0px;
-    width: 100%;
-    padding-bottom: 10px;
-    display: flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    justify-content: start;
-    align-items: start;
-    
-}
-.log {
-    margin-left: 100px;  
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #4a3f35;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.logo a img {
+  width: 70px;
+  transition: transform 0.3s ease;
+}
 
-.logo a img{
-    margin-left: 50px;
-    width: 90px;
+.logo a img:hover {
+  transform: scale(1.05);
 }
-.lista{
-    margin-left: 35%;
-    padding-left: 10%;
-    text-align: center;  
-}
+
 .lista ul {
-    list-style: none;
-    padding-top: 20px;
-    justify-content: flex-end;
-    display: flex;
-}
-
-.lista ul li{ 
-    margin: 10px;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .lista ul li a {
-    font-weight: bolder;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px;
-    color: #F3E9D2;
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #f3e9d2;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.lista ul li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #f3e9d2;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.lista ul li a:hover::after {
+  width: 100%;
+}
+
+.lista ul li a:hover {
+  color: #d4b27a;
+}
+
+
+@media screen and (max-width: 768px) {
+  .barra-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .lista ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    align-self: center;
+  }
 }
